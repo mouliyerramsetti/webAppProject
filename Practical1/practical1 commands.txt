@@ -1,0 +1,63 @@
+Practical 1:
+------------
+
+Create a GitHub repository named webAppProject. In the main branch, add index.html. Create three branches: adminfeature, userfeature, and managerfeature. In each, add the respective HTML file admin.html, user.html, and manager.html. Merge all branches into main and push the final result to GitHub.
+
+Pre requirement
+---------------
+1. webAppProject local Directory
+2. webAppProject remore repositoty
+
+Steps:
+1. create main branch and push index.html
+2. create 3 branches named with adminfeature, userfeature and manager feature push respective html files into branches
+3. merge adminfeature, userfeature and manager branch with main branch.
+
+Step1:
+
+git init
+git add index.html
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/suneethabulla/webAppProject.git
+git push -u origin main
+
+Step2
+
+git branch adminfeature
+git checkout adminfeature
+git add admin.html
+git commit -m "admin page commited in branch"
+git push -u origin adminfeature
+
+
+git checkout main
+git branch userfeature
+git checkout userfeature
+git add user.html
+git commit -m "user page commited in branch"
+git push -u origin userfeature
+
+git checkout main
+git branch managerfeature
+git checkout managerfeature
+git add manager.html
+git commit -m "manager page commited in branch"
+git push -u origin managerfeature
+
+step3:
+
+git checkout main
+git merge adminfeature -m "adminfeature merged with main"
+git merge userfeature -m "userfeature merged with main"
+git merge managerfeature -m "managerfeature merged with main"
+git push -u origin main
+
+
+finally clone project into your local directory
+
+git clone https://github.com/suneethabulla/webAppProject.git
+
+
+
+
